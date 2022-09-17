@@ -1,10 +1,10 @@
 import './sidebar.scss';
-import LogoF from '../../assets/images/logoo.png'
-import LogoSub from '../../assets/images/logo_sub.png'
+import LogoF from '../../assets/images/logo-f1.png'
+import LogoSub from '../../assets/images/logo_sub1.png'
 import { Link, NavLink } from 'react-router-dom'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faEnvelope, faHome, faUser } from '@fortawesome/free-solid-svg-icons';
-import { faGithub, faLinkedin,  } from '@fortawesome/free-brands-svg-icons';
+import { faGithub, faInstagram, faLinkedin,  } from '@fortawesome/free-brands-svg-icons';
 
 
 const Sidebar = () => (
@@ -19,11 +19,11 @@ const Sidebar = () => (
                 <FontAwesomeIcon icon={faHome} color="#4d4d4e"/>
             </NavLink>
 
-            <NavLink exact="true" activeclassname="active" className="about-link" to="/about" >
+            <NavLink  activeclassname="active" className="about-link" to="/about" >
                 <FontAwesomeIcon icon={faUser} color="#4d4d4e"/>
             </NavLink>
 
-            <NavLink exact="true" activeclassname="active" className="contact-link" to="/contact" >
+            <NavLink  activeclassname="active" className="contact-link" to="/contact" >
                 <FontAwesomeIcon icon={faEnvelope} color="#4d4d4e"/>
             </NavLink>
         </nav>
@@ -37,6 +37,11 @@ const Sidebar = () => (
             <li>
                 <a target="_blank" rel="noreferrer" href='https://github.com/KarkeniFadi'>
                     <FontAwesomeIcon icon={faGithub} color="#4d4d4e" />
+                </a>
+            </li>
+            <li>
+                <a target="_blank" rel="noreferrer" href='https://www.instagram.com/karkenifedi/'>
+                    <FontAwesomeIcon icon={faInstagram} color="#4d4d4e" />
                 </a>
             </li>
            

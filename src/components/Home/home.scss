@@ -1,0 +1,123 @@
+.home-page {
+    .text-zone {
+      position: absolute;
+      left: 10%;
+      top: 50%;
+      margin-left: -50px;
+      transform: translateY(-50%);
+      width: 40%;
+      max-height: 90%;
+    }
+  
+    h1 {
+      color: #fff;
+      font-size: 70px;
+      line-height: 53px;
+      letter-spacing: 2.5px;
+      margin: 0;
+      font-family: 'Coolvetica';
+      font-weight: 400;
+  
+      &:before {
+        content: '<h1>';
+        font-family: 'La Belle Aurore', cursive;
+        color: #ffd700;
+        font-size: 30px;
+        position: absolute;
+        margin-top: -50px;
+        left: -60px;
+        opacity: 0.7;
+        
+      }
+  
+      &:after {
+        content: '<h1/>';
+        font-family: 'La Belle Aurore', cursive;
+        color: #ffd700;
+        font-size: 30px;
+        position: absolute;
+        margin-top: 30px;
+        margin-left: 30px;
+        animation: fadeIn 1s 1.7s backwards;
+        opacity: 0.7;
+      }
+  
+      img {
+        margin-left: 20 px;
+        opacity: 0;
+        width: 52px;
+        height: auto;
+        animation: rotateIn 1s linear both;
+        animation-delay: 1.4s;
+      }
+    }
+  
+    h2 {
+      color: #8d8d8d;
+      margin-top: 20px;
+      font-weight: 400;
+      font-size: 19px;
+      font-family: sans-serif;
+      letter-spacing: 2.5px;
+      animation: fadeIn 1s 1.8s backwards;
+    }
+  
+    .flat-button {
+      color: #ffd700;
+      font-size: 13px;
+      font-weight: 400;
+      letter-spacing: 3px;
+      font-family: sans-serif;
+      text-decoration: none;
+      padding: 10px 18px;
+      border: 1px solid #ffd700;
+      border-radius: 20px;
+      margin-top: 25px;
+      float: left;
+      animation: fadeInAnimation 1s 1.8s backwards;
+      white-space: nowrap;
+  
+      &:hover {
+        background: #ffd700;
+        color: #333;
+      }
+    }
+
+   
+ 
+  
+  @media only screen and (max-width: 600px) {
+    .text-zone{
+      position: absolute;
+    left: 30%;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 70%;
+    max-height: 90%;
+    }
+    h1 {
+      color: #fff;
+      font-size: 56px;
+      line-height: 53px;
+      margin: 0;
+      font-family: 'Coolvetica';
+      font-weight: 400;
+      &:after {
+       
+        margin-top: -45px;
+        margin-left: 125%;
+      
+      }
+    }
+  }
+  @media only screen and (min-width: 600px) {
+    .text-zone{
+      position: absolute;
+    left: 20%;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 40%;
+    max-height: 90%;
+    }
+  }
+}
