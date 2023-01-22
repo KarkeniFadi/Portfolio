@@ -8,7 +8,7 @@ import {
   faSymfony,
 } from '@fortawesome/free-brands-svg-icons'
 import Loader from 'react-loaders'
-import AnimatedLetters from '../AnimatedLetters'
+import AnimatedLetters from '../AnimatedLetters/letter'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import './about.scss'
 

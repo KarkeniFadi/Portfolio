@@ -8,6 +8,7 @@ import { faGithub, faInstagram, faLinkedin,  } from '@fortawesome/free-brands-sv
 
 
 const Sidebar = () => (
+    
 
     <div className='nav-bar'>
         <Link className='logo' to='/'>
@@ -15,7 +16,7 @@ const Sidebar = () => (
             <img className='sub_logo' src={LogoSub} alt="logo_subt" />
         </Link>
         <nav>
-            <NavLink exact="true" activeclassname="active" to="/" >
+            <NavLink  activeclassname="active" to="/" >
                 <FontAwesomeIcon icon={faHome} color="#4d4d4e"/>
             </NavLink>
 
